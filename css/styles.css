@@ -533,6 +533,56 @@ section {
     gap: var(--space-sm);
 }
 
+@media (max-width: 1024px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-text {
+        order: 2;
+    }
+
+    .hero-image {
+        order: 1;
+        margin-bottom: var(--space-2xl);
+    }
+
+    .achievement-badges {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* Resize image + floating elements better */
+    .hero-image img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .floating-element {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-text .subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+    }
+
+    .hero-image img {
+        width: 100%;
+    }
+}
+
+
 .mouse {
     width: 26px;
     height: 40px;
