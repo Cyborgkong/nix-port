@@ -544,6 +544,7 @@ section {
     }
 
     .hero-image {
+        display: none;
         order: 1;
         margin-bottom: var(--space-2xl);
     }
@@ -581,7 +582,6 @@ section {
         width: 100%;
     }
 }
-
 
 .mouse {
     width: 26px;
